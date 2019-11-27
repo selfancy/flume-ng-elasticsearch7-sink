@@ -1,5 +1,5 @@
-# Flume 1.8.0 supporting ElasticSearch 6.2.4
-Base on: https://github.com/arberzal/flume-ng-elasticsearch2-sink
+# Flume 1.8.0 supporting ElasticSearch 7.4.2
+Base on: https://github.com/kitttyHappy/flume-ng-elasticsearch6-sink
 
 This version of the Flume ElasticSearch sink works with ElasticSearch 6.2.4
 but to do so, **some libraries used by Flume had to be updated to the newest
@@ -15,36 +15,49 @@ built on top of a reactive framework.
     
 ### Libraries to be added:
 ##### this project
-- flume-ng-elasticsearch6-sink-1.8.0.jar
+- flume-ng-elasticsearch7-sink-1.8.0.jar
 
 ##### common library
-- t-digest-3.0.jar
 - guava-11.0.2.jar
-- hppc-0.7.1.jar
+- hppc-0.8.1.jar
 - httpclient-4.2.1.jar
 - httpcore-4.2.1.jar
-- jackson-annotations-2.8.1.jar
-- jackson-core-2.8.9.jar
-- jackson-databind-2.8.9.jar
-- jackson-dataformat-cbor-2.8.10.jar
-- jackson-dataformat-smile-2.8.10.jar
-- jackson-dataformat-yaml-2.8.10.jar
-- joda-convert-1.2.jar
-- joda-time-2.9.4.jar
+- jackson-core-2.9.5.jar
+- jackson-databind-2.9.5.jar
+- jackson-dataformat-smile-2.8.11.jar
+- jackson-dataformat-yaml-2.8.11.jar
+- joda-time-2.9.9.jar
+- lang-mustache-client-7.4.2.jar
+- t-digest-3.2.jar
+- parent-join-client-7.4.2.jar
+- percolator-client-7.4.2.jar
 - snakeyaml-1.17.jar
 
-##### elasticsearch-6.2.4, plugins & dependencies
-- elasticsearch-6.2.4.jar
-- elasticsearch-core-6.2.4.jar
-- lang-mustache-client-6.2.4.jar
-- percolator-client-6.2.4.jar
-- reindex-client-6.2.4.jar
-- lucene-core-7.2.1.jar
-- lucene-highlighter-7.2.1.jar
-- lucene-join-7.2.1.jar
-- lucene-queries-7.2.1.jar
-- lucene-queryparser-7.2.1.jar
-- lucene-sandbox-7.2.1.jar
+#### netty library
+- netty-3.9.4.Final.jar
+- netty-buffer-4.1.38.Final.jar
+- netty-codec-4.1.38.Final.jar
+- netty-common-4.1.38.Final.jar
+- netty-handler-4.1.38.Final.jar
+- netty-resolver-4.1.38.Final.jar
+- netty-transport-4.1.38.Final.jar
+- transport-7.4.2.jar
+- transport-netty4-client-7.4.2.jar
+
+##### elasticsearch-7.4.2, plugins & dependencies
+- elasticsearch-7.4.2.jar
+- elasticsearch-cli-7.4.2.jar
+- elasticsearch-core-7.4.2.jar
+- elasticsearch-ssl-config-7.4.2.jar
+- elasticsearch-x-content-7.4.2.jar
+- lucene-core-8.2.0.jar
+- lucene-highlighter-8.2.0.jar
+- lucene-join-8.2.0.jar
+- lucene-misc-8.2.0.jar
+- lucene-queries-8.2.0.jar
+- lucene-queryparser-8.2.0.jar
+- lucene-sandbox-8.2.0.jar
+- reindex-client-7.4.2.jar
 
 ##### transportClient dependencies
 - transport-6.2.4.jar
@@ -63,7 +76,7 @@ built on top of a reactive framework.
 - log4j-core-2.9.1.jar
 
 #### avro dependencies
-- jackson-dataformat-cbor-2.8.10.jar
+- jackson-dataformat-cbor-2.8.11.jar
 
 ### Libraries to be removed:
 - flume-ng-elasticsearch-sink-1.8.0.jar
