@@ -1,7 +1,7 @@
 # Flume 1.8.0 supporting ElasticSearch 7.4.2
 Base on: https://github.com/kitttyHappy/flume-ng-elasticsearch6-sink
 
-This version of the Flume ElasticSearch sink works with ElasticSearch 6.2.4
+This version of the Flume ElasticSearch sink works with ElasticSearch 7.4.2
 but to do so, **some libraries used by Flume had to be updated to the newest
 versions**,  **For this reason, many tests do not work retuning a pretty "jar
 hell" exception.**
